@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>threeMillions</title>
+	<meta name ="viewport" content = "width= device-width, initial-scale = 1.0" >
+	<meta http-eqiv ="X-UA-Compatible" content = "ie=edge" >
+</head>
+
+<body onload="milGenerator()">
+
+	<p> ThreeMillions are:</p>
+	<p id="theNos"></p>
+
+<script type="text/javascript">
+	var tmillons = [];
+
+	function milGenerator() {
+	 	for (var i = 3000000; i<4000000; i++){
+	 		tmillons.push(i);
+	 	}
+	 	tmillons.join('\n');
+	 	document.getElementById("theNos").innerHTML= tmillons;
+	 } 
+</script>
+</body>
+</html>
